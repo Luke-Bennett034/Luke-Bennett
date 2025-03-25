@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luke Bennett - Automation Expert</title>
+  <!-- Basic HTML Setup -->
+  <meta charset="UTF-8"> <!-- Sets the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site mobile responsive -->
+  <title>Luke Bennett - Automation Expert</title> <!-- Title shown in browser tab -->
+
+  <!-- Embedded CSS Styles -->
   <style>
-    /* Reset default margin and padding */
+    /* ===== Global Reset ===== */
+    /* Removes default browser spacing and sets a consistent font */
     body, h1, h2, p, ul {
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
     }
 
-    /* Basic Styling */
+    /* ===== General Body Styling ===== */
     body {
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #f9f9f9; /* Light gray background */
+      color: #333; /* Default text color */
       line-height: 1.6;
       text-align: center;
       padding: 0;
     }
 
-    /* Header Section */
+    /* ===== Header Styling ===== */
     header {
-      background: #1a73e8; /* FlowMondo-like bright blue */
-      color: white;
-      padding: 60px 0;
+      background: #1a73e8; /* Bright blue background (inspired by Flowmondo) */
+      color: white; /* White text */
+      padding: 60px 0; /* Top and bottom padding */
       text-align: center;
-      border-bottom: 4px solid #0c5db1;
+      border-bottom: 4px solid #0c5db1; /* Slight border for separation */
     }
 
     header h1 {
@@ -46,17 +50,17 @@
       font-size: 1.1rem;
       color: #fff;
       text-decoration: none;
-      background-color: #ff9800;
+      background-color: #ff9800; /* Orange button */
       padding: 15px 30px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
 
     header a:hover {
-      background-color: #f57c00;
+      background-color: #f57c00; /* Darker orange on hover */
     }
 
-    /* Main Content */
+    /* ===== Main Content Area ===== */
     .main-content {
       margin-top: 60px;
       max-width: 1000px;
@@ -66,28 +70,28 @@
       padding: 20px;
     }
 
-    /* Services Section */
+    /* ===== Services Section ===== */
     .services {
-      display: flex;
-      justify-content: space-between;
+      display: flex; /* Flex layout for boxes */
+      justify-content: space-between; /* Space between boxes */
       margin-top: 40px;
-      flex-wrap: wrap;
+      flex-wrap: wrap; /* Allows wrapping on small screens */
       text-align: center;
     }
 
     .service-box {
-      background: white;
+      background: white; /* White cards */
       border-radius: 8px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
       padding: 30px;
       margin: 20px;
       width: 30%;
-      min-width: 280px;
-      transition: transform 0.3s ease;
+      min-width: 280px; /* Keeps boxes readable on small screens */
+      transition: transform 0.3s ease; /* Smooth zoom effect */
     }
 
     .service-box:hover {
-      transform: scale(1.05);
+      transform: scale(1.05); /* Slight zoom on hover */
     }
 
     .service-box h3 {
@@ -101,7 +105,7 @@
       color: #555;
     }
 
-    /* Contact Section */
+    /* ===== Contact Section ===== */
     .contact {
       background: #1a73e8;
       color: white;
@@ -134,9 +138,9 @@
       background-color: #f57c00;
     }
 
-    /* Footer Section */
+    /* ===== Footer Section ===== */
     footer {
-      background: #2c3e50;
+      background: #2c3e50; /* Dark blue-gray */
       color: white;
       padding: 20px;
       margin-top: 60px;
@@ -147,64 +151,73 @@
       margin-top: 10px;
     }
 
-    /* Responsive Design */
+    /* ===== Responsive Design for Mobile ===== */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2.5rem;
       }
 
       .services {
-        flex-direction: column;
+        flex-direction: column; /* Stack service boxes vertically */
         align-items: center;
       }
 
       .service-box {
-        width: 80%;
+        width: 80%; /* Full width on small screens */
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- ===== Header Section ===== -->
   <header>
-    <h1>Luke Bennett</h1>
-    <p>Automating workflows and boosting productivity with seamless integrations</p>
-    <a href="mailto:your@email.com">Contact Me</a>
+    <h1>Luke Bennett</h1> <!-- Your Name -->
+    <p>Automating workflows and boosting productivity with seamless integrations</p> <!-- Tagline -->
+    <a href="mailto:your@email.com">Contact Me</a> <!-- Email button -->
   </header>
 
-  <!-- Main Content Section -->
+  <!-- ===== Main Content Section ===== -->
   <div class="main-content">
-    <h2>What I Do</h2>
+    <h2>What I Do</h2> <!-- Section Title -->
     <p>I specialize in creating custom automations between tools like HubSpot, Airtable, Make.com, and many more to help businesses save time and streamline their processes.</p>
 
+    <!-- ===== Services Section ===== -->
     <div class="services">
+
+      <!-- Individual Service Box -->
       <div class="service-box">
         <h3>CRM Automation</h3>
         <p>Automate your CRM workflows and manage leads effortlessly with integrations like HubSpot & Airtable.</p>
       </div>
+
+      <!-- Another Service -->
       <div class="service-box">
         <h3>Custom Integrations</h3>
         <p>Connecting your favorite apps for seamless data flow and enhanced productivity.</p>
       </div>
+
+      <!-- Another Service -->
       <div class="service-box">
         <h3>Data Management</h3>
         <p>Automate data entry, data cleanup, and improve the quality of your customer database.</p>
       </div>
+
     </div>
   </div>
 
-  <!-- Contact Section -->
+  <!-- ===== Contact Section ===== -->
   <div class="contact">
     <h2>Let's Work Together!</h2>
     <p>Ready to automate your processes? Contact me today to discuss how we can improve your workflows.</p>
     <a href="mailto:your@email.com">Reach Out</a>
   </div>
 
-  <!-- Footer Section -->
+  <!-- ===== Footer Section ===== -->
   <footer>
-    <p>&copy; 2025 Luke Bennett. All Rights Reserved.</p>
+    <p>&copy; 2025 Luke Bennett. All Rights Reserved.</p> <!-- Copyright -->
   </footer>
 
 </body>
 </html>
+
