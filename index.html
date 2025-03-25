@@ -1,141 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luke Bennett | Automation Specialist</title>
-
-  <!-- Embedded CSS for styling -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luke Bennett - Automation Expert</title>
   <style>
-    /* Global Reset */
-    body, h1, h2, h3, p {
+    /* Reset default margin and padding */
+    body, h1, h2, p, ul {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       font-family: 'Arial', sans-serif;
     }
 
-    /* ===== Background Style ===== */
+    /* Basic Styling */
     body {
-      /* Set background image using uploaded GitHub image */
-      background: url('b95464b9-c83a-4940-9c96-db7944ddf496.webp') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
+      text-align: center;
       padding: 0;
     }
 
-    /* ===== Header Section ===== */
+    /* Header Section */
     header {
-      background: rgba(26, 115, 232, 0.85); /* Semi-transparent blue */
+      background: #1a73e8; /* FlowMondo-like bright blue */
       color: white;
       padding: 60px 0;
       text-align: center;
+      border-bottom: 4px solid #0c5db1;
     }
 
     header h1 {
-      font-size: 3rem;
-      font-weight: bold;
+      font-size: 3.5rem;
+      font-weight: 700;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 1.2rem;
       margin-bottom: 20px;
+      font-weight: 300;
     }
 
     header a {
-      background-color: #ff9800;
-      color: white;
+      font-size: 1.1rem;
+      color: #fff;
       text-decoration: none;
-      padding: 12px 24px;
+      background-color: #ff9800;
+      padding: 15px 30px;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     header a:hover {
       background-color: #f57c00;
     }
 
-    /* ===== Services Section ===== */
+    /* Main Content */
+    .main-content {
+      margin-top: 60px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      padding: 20px;
+    }
+
+    /* Services Section */
     .services {
       display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
       flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 30px;
+      text-align: center;
     }
 
     .service-box {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       padding: 30px;
-      width: 280px;
-      transition: transform 0.3s;
-      text-align: center;
+      margin: 20px;
+      width: 30%;
+      min-width: 280px;
+      transition: transform 0.3s ease;
     }
 
     .service-box:hover {
       transform: scale(1.05);
     }
 
-    .service-box a {
-      text-decoration: none; /* Removes underlining from links */
-      color: inherit; /* Inherits color from parent */
-    }
-
     .service-box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
       color: #1a73e8;
-      margin-bottom: 10px;
     }
 
     .service-box p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: #555;
     }
 
-    /* ===== Contact Section ===== */
+    /* Contact Section */
     .contact {
-      background: rgba(26, 115, 232, 0.85);
+      background: #1a73e8;
       color: white;
-      padding: 50px 20px;
-      text-align: center;
-      margin-top: 50px;
+      padding: 40px;
+      margin-top: 60px;
+      border-radius: 8px;
     }
 
     .contact h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
     }
 
     .contact p {
+      font-size: 1.2rem;
       margin-bottom: 20px;
     }
 
     .contact a {
-      background-color: #ff9800;
+      font-size: 1.1rem;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
       text-decoration: none;
+      background-color: #ff9800;
+      padding: 12px 24px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     .contact a:hover {
       background-color: #f57c00;
     }
 
-    /* ===== Footer ===== */
+    /* Footer Section */
     footer {
       background: #2c3e50;
       color: white;
       padding: 20px;
-      text-align: center;
+      margin-top: 60px;
     }
 
-    /* ===== Responsive Design for Mobile ===== */
+    footer p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    /* Responsive Design */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       .services {
@@ -144,57 +159,51 @@
       }
 
       .service-box {
-        width: 90%;
+        width: 80%;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== Header Section ===== -->
+  <!-- Header Section -->
   <header>
     <h1>Luke Bennett</h1>
-    <p>Automation Developer | HubSpot | Airtable | Make.com</p>
-    <a href="#contact">Let’s Work Together</a>
+    <p>Automating workflows and boosting productivity with seamless integrations</p>
+    <a href="mailto:your@email.com">Contact Me</a>
   </header>
 
-  <!-- ===== Services Section ===== -->
-  <section class="services">
-    <!-- Service 1 -->
-    <div class="service-box">
-      <a href="crm-automation.html">
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <h2>What I Do</h2>
+    <p>I specialize in creating custom automations between tools like HubSpot, Airtable, Make.com, and many more to help businesses save time and streamline their processes.</p>
+
+    <div class="services">
+      <div class="service-box">
         <h3>CRM Automation</h3>
-        <p>Streamlining customer journeys with intelligent workflows.</p>
-      </a>
-    </div>
-
-    <!-- Service 2 -->
-    <div class="service-box">
-      <a href="custom-integrations.html">
+        <p>Automate your CRM workflows and manage leads effortlessly with integrations like HubSpot & Airtable.</p>
+      </div>
+      <div class="service-box">
         <h3>Custom Integrations</h3>
-        <p>Connecting tools like HubSpot, Airtable, Notion, and more.</p>
-      </a>
+        <p>Connecting your favorite apps for seamless data flow and enhanced productivity.</p>
+      </div>
+      <div class="service-box">
+        <h3>Data Management</h3>
+        <p>Automate data entry, data cleanup, and improve the quality of your customer database.</p>
+      </div>
     </div>
+  </div>
 
-    <!-- Service 3 -->
-    <div class="service-box">
-      <a href="maintenance.html">
-        <h3>Ongoing Support</h3>
-        <p>Monitoring, updates, and scaling of automations over time.</p>
-      </a>
-    </div>
-  </section>
+  <!-- Contact Section -->
+  <div class="contact">
+    <h2>Let's Work Together!</h2>
+    <p>Ready to automate your processes? Contact me today to discuss how we can improve your workflows.</p>
+    <a href="mailto:your@email.com">Reach Out</a>
+  </div>
 
-  <!-- ===== Contact Section ===== -->
-  <section id="contact" class="contact">
-    <h2>Let’s Automate Something</h2>
-    <p>Email me directly to discuss your project or ideas.</p>
-    <a href="mailto:your@email.com">Email Me</a>
-  </section>
-
-  <!-- ===== Footer ===== -->
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 Luke Bennett. All rights reserved.</p>
+    <p>&copy; 2025 Luke Bennett. All Rights Reserved.</p>
   </footer>
 
 </body>
